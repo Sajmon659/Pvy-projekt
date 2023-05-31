@@ -1,0 +1,145 @@
+main {
+    max-width: 1000px;
+  }
+  
+  .flexbox-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+  }
+  
+  .text-container {
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #1226d9;
+    padding: 20px;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #6a6868;
+  }
+  
+  footer {
+    background-color: #eaa4a4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .newsletter-form input[type="email"],
+  .popup-newsletter-form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-form label,
+  .popup-newsletter-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-form button,
+  .popup-newsletter-form button {
+    padding: 10px 20px;
+    background-color: #7c4b4b;
+    color: #5ce8be;
+    border: none;
+    cursor: pointer;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 188, 28, 0.619);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    display: none;
+  }
+  
+  .popup-content {
+    background-color: #ed2b86;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .popup h3 {
+    margin-top: 0;
+  }
+  
+  .popup-image {
+    max-width: 100px;
+    margin-top: 20px;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100%;
+  }
+  
+  h1 {
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+  }
+  
+  :root {
+    --heading-size: 2rem;
+    --primary-color: #333;
+    --secondary-color: #999;
+  }
+  
+  h1 {
+    font-size: var(--heading-size);
+    color: var(--primary-color);
+  }
+  
+  h2 {
+    font-size: calc(var(--heading-size) * 0.8);
+    color: var(--secondary-color);
+  }
+  
